@@ -10,7 +10,7 @@ import javax.persistence.Table;
 public class Payment {
 
 	private int id;
-	private boolean paymenCompleted;
+	private boolean paymentCompleted;
 	 @Enumerated(EnumType.STRING)
 	private PaymentMode paymentMode;
 	private Reservation reservation;
@@ -18,10 +18,10 @@ public class Payment {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Payment(int id, boolean paymenCompleted, PaymentMode paymentMode, Reservation reservation) {
+	public Payment(int id, boolean paymentCompleted, PaymentMode paymentMode, Reservation reservation) {
 		super();
 		this.id = id;
-		this.paymenCompleted = paymenCompleted;
+		this.paymentCompleted = paymentCompleted;
 		this.paymentMode = paymentMode;
 		this.reservation = reservation;
 	}
@@ -31,11 +31,11 @@ public class Payment {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public boolean isPaymenCompleted() {
-		return paymenCompleted;
+	public boolean isPaymentCompleted() {
+		return paymentCompleted;
 	}
-	public void setPaymenCompleted(boolean paymenCompleted) {
-		this.paymenCompleted = paymenCompleted;
+	public void setPaymentCompleted(boolean paymentCompleted) {
+		this.paymentCompleted = paymentCompleted;
 	}
 	public PaymentMode getPaymentMode() {
 		return paymentMode;
