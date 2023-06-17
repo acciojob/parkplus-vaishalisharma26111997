@@ -64,7 +64,7 @@ public class ReservationServiceImpl implements ReservationService {
 	    // Implement your logic to check if the spot is available
 	    // For example, you could check if the spot is occupied or if it has any reservations during the requested time
 	    // Return true if the spot is available, false otherwise
-	    return !spot.isOccupied();
+	    return !spot.getOccupied();
 	}
 	private boolean check(SpotType spotType,Integer numberOfWheels)
 	{
